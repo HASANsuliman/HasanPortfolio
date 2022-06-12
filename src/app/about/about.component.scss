@@ -1,0 +1,151 @@
+.about {
+  width: 100%;
+  height: 100%;
+}
+
+.a-0 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.a-1 {
+  width: 50%;
+  padding-left: 55px;
+  padding-top: 25px;
+  text-align: left;
+}
+
+.dodiv {
+  width: 100%;
+  height: auto;
+}
+
+.aboutbod2 {
+  width: 90%;
+  padding-left: 59px;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+.skill {
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// .a-2{
+//   transform: translateY(150px);
+// }
+// #main:hover ~ .a-2 {
+//     transform: translateY(0px);
+
+// }
+// .crd:hover > .a2-1  {
+//   transform: translateY(0px);
+
+// }
+// .crd:hover + .a2-1  {
+//   transform: translateY(0px);
+
+// }
+// .crd:hover  .a2-1  {
+//   transform: translateY(0px);
+
+// }
+// column title
+
+
+.imgdiv {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// button animation
+button {
+  margin: 5px;
+  padding: 5px 20px;
+  transition: 0.7s;
+}
+button:hover {
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0 35px teal;
+  background: teal;
+}
+.a-2:hover{
+  transform: scale(1.1)!important;
+  transform: translateZ(10px);
+}
+
+.a-2{
+  transition: all 0.5s linear;
+}
+.a2-1 {
+  width: 270px;
+  height: 215px;
+
+}
+.a2-1 img{
+  height: 210px;
+  z-index: 1;
+  border-radius: 10px;
+  width: 265px;
+
+}
+button::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #455a64;
+}
+button span {
+  position: relative;
+  z-index: 1;
+}
+button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+button i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 20px;
+  height: 3px;
+  background: #455a64;
+  transition: 0.7s;
+  transform: translateX(-50%) skewX(325deg);
+}
+button:hover i::before {
+  left: 20%;
+  width: 20px;
+  transition: 0.7s;
+}
+button i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 20px;
+  height: 3px;
+  background: #455a64;
+  transition: 0.7s;
+  transform: translateX(-50%) skewX(325deg);
+}
+button:hover i::after {
+  left: 80%;
+  width: 20px;
+}

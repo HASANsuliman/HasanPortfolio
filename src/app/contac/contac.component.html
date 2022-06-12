@@ -1,0 +1,49 @@
+<div class="contact">
+  <div class="e-0">
+    <div class="exp-1">
+      <h1 data-text="Contact">Contact</h1>
+    </div>
+    <div class="exp-2">
+      <h4 data-text="">
+        Interested in hiring me for your project or just want to say hi?
+      </h4>
+      <h4 data-text="">
+        You can fill in the contact form below or send me an email to
+        <a href="mailto:#">hassnsuliman50@gmail.com</a>
+      </h4>
+    </div>
+
+    <mat-divider></mat-divider>
+    <div class="c-title">
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+    <div class="c-1">
+
+      <div class="forms">
+        <div class="name">
+          <input placeholder="Name" type="text"/>
+        </div>
+        <div class="name">
+          <input placeholder="Email" type="text" />
+        </div>
+        <div class="name">
+          <input placeholder="Company" type="text" />
+        </div>
+        <div class="name">
+          <mat-select placeholder="Intersted" >
+            <mat-option *ngFor="let item of intersted" value="item">{{item}}</mat-option>
+          </mat-select>
+          <!-- <select placeholder="Interested"  class="mat-form-field" ><option *ngFor="let item of intersted">{{item}}</option></select> -->
+        </div>
+        <div class="textra">
+          <textarea   matInput placeholder="..." ></textarea>
+        </div>
+
+    </div>
+
+  </div>
+  <div class="actbtn">
+    <button mat-raised-button color="primary"> <span>Send</span><i></i></button>
+  </div>
+
+</div>

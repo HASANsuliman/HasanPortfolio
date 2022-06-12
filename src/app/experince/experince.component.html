@@ -1,0 +1,74 @@
+<div class="exp">
+  <div class="e-0">
+    <div class="exp-1">
+      <h1 data-text="Experiance">Experiance <br /></h1>
+    </div>
+    <div class="exp-2">
+      <mat-icon>done</mat-icon>
+      <h4 data-text="">Worked For 3 years At media handling tv systems</h4>
+    </div>
+    <div class="exp-2">
+      <mat-icon style="margin-bottom: 45px">done</mat-icon>
+      <h4 data-text="">
+        Working since 2020 At Syriatel Company making and maintains Sales
+        Section Systems and Dealing with oracle & sql Database to post and get
+        data from /to Web Applications
+      </h4>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div class="ecrd">
+      <h2 class="section-title">Features</h2>
+
+      <div class="gauge">
+        <ngx-gauge
+          *ngFor="let item of gauge"
+          [type]="'arch'"
+          [value]="item.gaugeValue"
+          [foregroundColor]="fgc"
+          [backgroundColor]="backgroundColor"
+          [thick]="thick"
+          [cap]="'round'"
+          [label]="item.gaugeLabel"
+          [append]="item.gaugeAppendText"
+        >
+        </ngx-gauge>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div class="ecrd">
+      <h2 class="section-title">Skills</h2>
+      <div class="eskills">
+        <ngx-charts-bar-horizontal
+          [scheme]="colorScheme"
+          [animations]="true"
+          [barPadding]="15"
+          [showGridLines]="false"
+          [results]="single"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel"
+
+        >
+        </ngx-charts-bar-horizontal>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+
+     <div class="ecrd">
+      <h2 class="section-title"> Others</h2>
+      <div class="eskills">
+        <ngx-charts-number-card [view]="[900,130]" [animations]="true" [cardColor]="cardColor"
+          [results]="other"  [customColors]="colorSchemep">
+        </ngx-charts-number-card>
+
+      </div>
+    </div>
+  </div>
+</div>

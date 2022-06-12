@@ -1,0 +1,90 @@
+<div [ngClass]="isDarkThem? 'dark-theme':'light-theme'">
+  <mat-grid-list cols="1" rowHeight="60px">
+    <!-- header -->
+    <mat-grid-tile class="headertile" [colspan]="1" [rowspan]="1">
+      <mat-grid-tile-header class="headergrid">
+        <h2> Hasan Sulaiman</h2>
+      </mat-grid-tile-header>
+    </mat-grid-tile>
+
+    <!-- picture -->
+    <mat-grid-tile class="Pictile" [colspan]="1" [rowspan]="3">
+      <mat-grid-tile-header class="picgrid">
+        <mat-icon matListAvatar iconAvatar class="avtar"><img class="img" src="../../assets/img/me3.jpg"></mat-icon>
+      </mat-grid-tile-header>
+    </mat-grid-tile>
+
+    <!-- about me -->
+    <mat-grid-tile class="metile" [colspan]="1" [rowspan]="2">
+      <mat-grid-tile-header class="megrid">
+        <p> Hey there my name is Hasan<br> Welcome to my personal website!</p>
+      </mat-grid-tile-header>
+    </mat-grid-tile>
+    <mat-grid-tile class="Contacttile" [colspan]="1" [rowspan]="1">
+      <mat-list>
+        <mat-list-item>
+          <a href="https://www.facebook.com/hassoon93">
+            <mat-icon matListIcon >facebook</mat-icon>
+          </a>
+          <a href="https://www.facebook.com/hassoon93">
+            <mat-icon matListIcon >telegram</mat-icon>
+          </a>
+          <a href="https://www.facebook.com/hassoon93">
+            <mat-icon matListIcon  >email</mat-icon>
+          </a>
+          <a href="https://www.facebook.com/hassoon93">
+            <mat-icon matListIcon >linkedin-in</mat-icon>
+          </a>
+          <a href="https://www.facebook.com/hassoon93">
+            <mat-icon matListIcon >phone</mat-icon>
+          </a>
+        </mat-list-item>
+      </mat-list>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-divider class="divider"></mat-divider>
+  <mat-nav-list class="navlist">
+    <mat-list-item class="itemlist" [routerLink]="[ '/About' ]" class="list">
+      <div class="mat-list-item-content">
+        <mat-icon matListIcon href="">person</mat-icon>
+        About
+      </div>
+    </mat-list-item>
+    <mat-list-item class="itemlist" [routerLink]="[ '/Portolio' ]" class="list">
+      <div class="mat-list-item-content">
+        <mat-icon matListIcon href="">home</mat-icon>
+        Portfolio
+      </div>
+    </mat-list-item>
+    <mat-list-item class="itemlist" [routerLink]="[ '/Experiance' ]" class="list">
+      <div class="mat-list-item-content">
+        <mat-icon matListIcon href=""><span>
+            work
+          </span></mat-icon>
+        Experiance
+      </div>
+    </mat-list-item>
+    <mat-list-item class="itemlist" [routerLink]="[ '/Project' ]" class="list">
+      <div class="mat-list-item-content">
+        <mat-icon matListIcon href=""><span>
+            terminal
+          </span></mat-icon>
+        Projects
+      </div>
+    </mat-list-item>
+    <mat-list-item class="itemlist" [routerLink]="[ '/Contact' ]" class="list">
+      <div class="mat-list-item-content">
+        <mat-icon matListIcon href=""><span>
+            contact_mail
+          </span></mat-icon>
+        Contact
+      </div>
+    </mat-list-item>
+  </mat-nav-list>
+  <mat-divider></mat-divider>
+  <div class="DM">
+    Dark Mode <mat-slide-toggle (click)="switch()" [formControl]="toggleControl"></mat-slide-toggle>
+
+  </div>
+
+</div>

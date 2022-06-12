@@ -1,0 +1,139 @@
+mat-grid-list {
+  height: 370px !important;
+}
+.headertile {
+  background: #54b689;
+}
+.headergrid {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background: #54b689 !important;
+}
+.Pictile {
+  background: #54b689;
+  top: 60px !important;
+}
+.picgrid {
+  height: 150px !important;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background: #54b689 !important;
+  margin-top: -1px;
+}
+.avtar {
+  height: 140px !important;
+  width: 140px !important;
+  border-radius: 50%;
+}
+.img{
+  height: 140px !important;
+  width: 140px !important;
+  border-radius: 50%;
+}
+.metile {
+  background: #54b689;
+  top: 209px !important;
+}
+.megrid {
+  height: 100px !important;
+  justify-content: center;
+  justify-items: center;
+  background: #54b689 !important;
+}
+mat-lis {
+  display: inline;
+}
+.Contacttile {
+  background: #54b689;
+  top: 309px !important;
+}
+mat-icon {
+  color: #54b689;
+  background: white;
+
+}
+
+a{
+    margin: 5px;
+}
+.navlist {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: -2px;
+}
+mat-list-item {
+  height: 35px !important;
+}
+.mat-list-item-content {
+  padding: 0 50px !important;
+  color: white;
+}
+.mat-list-item-content .mat-icon {
+  color: #54b689;
+  background: white;
+  margin-right: 5px;
+}
+.DM {
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  margin-top: 16px;
+  width: 100%;
+  margin-top: -1px;
+  height: 64px;
+
+}
+mat-divider{
+  border-top-color: #ffffff38 !important;
+}
+.dark-theme .divider {
+  border-top-color: white !important;
+}
+.dm .mat-icon{
+  color: white;
+}
+mat-slide-toggle {
+  margin-left: 5px;
+}
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background-color: #c9e4e1;
+}
+
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #54b689;
+}
+.dark-theme .Contacttile {
+  background: #1e2a3a !important;
+  //040613e-6-
+  //#0c171-e
+}
+.dark-theme .mat-grid-tile .mat-grid-tile-header {
+  background: #1e2a3a !important;
+}
+.dark-theme .headertile {
+  background: #1e2a3a !important;
+}
+.dark-theme .navlist {
+  background: #1e2a3a !important;
+}
+.dark-theme .DM {
+  background: #1e2a3a !important;
+}
+// .dark-theme mat-grid-list {
+//   background: #04292d !important;
+
+// }
+.dark-theme .mat-icon {
+  color: white;
+  background: #54b689;
+}

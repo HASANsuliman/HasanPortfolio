@@ -1,0 +1,91 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer *ngIf="!hideSideMenu" class="side" #drawer mode="side" opened>
+    <div class="p-1">
+      <h3 class="p-1-h"> Hasan Sulaiman</h3>
+    </div>
+    <div class="p-2">
+        <img class="img" src="../../assets/img/has2.jpg">
+      <p> Hey there Iam Hasan<br> Welcome to my personal website!</p>
+
+      <mat-list>
+        <mat-list-item>
+          <a href="https://www.facebook.com/hassoon93">
+            <mat-icon matListIcon>facebook</mat-icon>
+          </a>
+          <a href="https://www.facebook.com/hassoon93">
+            <mat-icon matListIcon>telegram</mat-icon>
+          </a>
+          <a href="https://www.facebook.com/hassoon93">
+            <mat-icon matListIcon>email</mat-icon>
+          </a>
+          <a href="https://www.facebook.com/hassoon93">
+            <mat-icon matListIcon>phone</mat-icon>
+          </a>
+
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <mat-divider></mat-divider>
+<div>
+  <!-- <mat-nav-list >
+    <mat-list-item [routerLink]="[ '/About' ]" >
+        <a data-text="About">About</a>
+
+
+    </mat-list-item>
+    <mat-list-item [routerLink]="[ '/Portolio' ]" data-text="Portfolio" >
+        <a data-text="Portfolio">Portfolio</a>
+
+    </mat-list-item>
+    <mat-list-item [routerLink]="[ '/Experiance' ]"  >
+        <a data-text="Experiance">Experiance</a>
+
+    </mat-list-item>
+    <mat-list-item [routerLink]="[ '/Project' ]"  >
+       <a  data-text="Projects">Projects</a>
+
+    </mat-list-item>
+    <mat-list-item  >
+       <a  data-text="Contact">Contact</a>
+    </mat-list-item>
+  </mat-nav-list> -->
+
+  <mat-list>
+    <mat-list-item>
+      <mat-icon> home</mat-icon>
+      <a [routerLink]="[ '/About' ]"  data-text="About">About</a>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon> dataset</mat-icon>
+      <a [routerLink]="[ '/Portolio' ]" data-text="Portolio">Portolio</a>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon> <span class="material-symbols-outlined">
+        view_timeline
+        </span></mat-icon>
+      <a [routerLink]="[ '/Experiance' ]"   data-text="Experiance">Experiance</a>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon>  transcribe</mat-icon>
+      <a [routerLink]="[ '/Project' ]" data-text="Resume">Resume</a>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon>phone</mat-icon>
+      <a [routerLink]="[ '/Contact' ]"  data-text="Contact">Contact</a>
+    </mat-list-item>
+  </mat-list>
+
+
+
+
+</div>
+
+    <mat-divider></mat-divider>
+    <div class="DM">
+      Dark Mode <mat-slide-toggle [formControl]="toggleControl"></mat-slide-toggle>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

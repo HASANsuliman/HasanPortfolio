@@ -1,0 +1,133 @@
+.land {
+  background: url(../../assets/img/code1.jpg);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+  //background: #3f6ba5;
+  padding: 5px 20px;
+  transition: 0.7s;
+  background: transparent;
+}
+button:hover {
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0 35px teal;
+  background: teal;
+}
+button::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #455a64;
+}
+button span {
+  position: relative;
+  z-index: 1;
+}
+button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+button i::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 72%;
+  width: 20px;
+  height: 3px;
+  background: #455a64;
+  transition: 0.7s;
+  transform: translateX(-50%) skewX(325deg);
+}
+button:hover i::before {
+  left: 20%;
+  width: 20px;
+  transition: 0.7s;
+}
+button i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 27%;
+  width: 20px;
+  height: 3px;
+  background: #455a64;
+  transition: 0.7s;
+  transform: translateX(-50%) skewX(325deg);
+}
+button:hover i::after {
+  left: 80%;
+  width: 20px;
+}
+.ld{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ld-1{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  font-style: italic;
+  margin-top: 5%;
+  color: #9fcbdb;
+}
+.ld-1 h1 {
+font-size: 3rem;
+font-style: italic;
+
+}
+
+.exp-1{
+  width: auto;
+  flex-direction: column;
+}
+.e2{
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25%;
+}
+.e2 h1{
+  margin-right: 15px;
+  flex-wrap: wrap;
+
+}
+
+.landing1{
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.e2 h1::before {
+  color: #9fcbdb;
+ }
+  .e2 h1 {
+    color: #142b44;
+    font-size: 4rem;
+    -webkit-text-stroke: 0vw #383d52;
+  }
+.all{
+  width: 100%;
+  height: 100%;
+}
