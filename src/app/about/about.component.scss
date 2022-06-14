@@ -44,33 +44,12 @@
 }
 
 
-// .a-2{
-//   transform: translateY(150px);
-// }
-// #main:hover ~ .a-2 {
-//     transform: translateY(0px);
-
-// }
-// .crd:hover > .a2-1  {
-//   transform: translateY(0px);
-
-// }
-// .crd:hover + .a2-1  {
-//   transform: translateY(0px);
-
-// }
-// .crd:hover  .a2-1  {
-//   transform: translateY(0px);
-
-// }
-// column title
-
-
 .imgdiv {
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 45px;
 }
 // button animation
 button {
@@ -97,10 +76,10 @@ button:hover {
 
 }
 .a2-1 img{
-  height: 210px;
+  height: 98%;
   z-index: 1;
   border-radius: 10px;
-  width: 265px;
+  width: 98%;
 
 }
 button::before {
