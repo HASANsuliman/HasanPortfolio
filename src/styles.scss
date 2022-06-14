@@ -225,10 +225,13 @@ h2{
 }
 .p1 {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1900px;
+    margin: auto;
+    padding: 2rem;
 }
 .portsubheader {
   width: 90%;
@@ -303,13 +306,12 @@ h1::before {
   height: 40px;
   background: teal;
   position: absolute;
-  left: 60px;
-  top: -5px;
+  left: -7px;
+  top: -7px;
 }
 
 .section-title {
   position: relative;
-  padding-left: 4.5rem;
   margin: 8px 0 12px !important;
 }
 
@@ -506,36 +508,39 @@ canvas {
   background: #fafafa;
   position: relative;
   width: 30%;
-  height: 150px;
-  //border-radius: 10px;
+  //height: 150px;
+
   box-shadow: 0 10px 20px teal;
   transition: width 2s, height 2s, transform 2s;
   margin: 10px;
   animation: 1.5s linear infinite;
   z-index: 0;
-
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .circle{
       background: teal;
 
-      clip-path: polygon(50% 0%, 135% 0%, 50% 100%, -40% 0%);
+     // clip-path: polygon(50% 0%, 135% 0%, 50% 100%, -40% 0%);
 }
 .skill .crrd:hover{
   filter: blur(0px) !important;
   transform: scale(1.3)!important;
   z-index: 1!important;
   opacity: 1!important;
-   width: 34%;
-
+  max-width: 35%;
 }
 
 
 // .skill .crrd:hover:nth-child(2){
 //   transform: translate(-30%)!important;
 // }
-.skill .crrd:hover:nth-child(3){
-  width: 32%;
-}
+// .skill .crrd:hover:nth-child(3){
+//   width: 32%;
+// }
 .skill:hover .crrd{
   filter:blur(2px);
   transform: scale(0.9);
@@ -548,6 +553,8 @@ opacity: 0.5;
   align-content: center;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
 }
 .imgicn2 h4{
   margin: 0 0 10px;

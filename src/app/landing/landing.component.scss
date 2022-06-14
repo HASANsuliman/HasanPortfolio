@@ -1,8 +1,21 @@
+
+.all{
+
+
+
+}
+.ld{
+  display: flex;
+  flex-direction: row;
+  max-width: 1900px;
+  margin: auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: flex-start;
+}
 .land {
-  background: url(../../assets/img/code1.jpg);
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -72,11 +85,7 @@ button:hover i::after {
   left: 80%;
   width: 20px;
 }
-.ld{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+
 .ld-1{
   display: flex;
   width: 50%;
@@ -96,7 +105,6 @@ font-style: italic;
 }
 
 .exp-1{
-  width: auto;
   flex-direction: column;
 }
 .e2{
@@ -114,10 +122,11 @@ font-style: italic;
 .landing1{
   display: flex;
   align-content: center;
-  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+
 }
 .e2 h1::before {
   color: #9fcbdb;
@@ -127,7 +136,3 @@ font-style: italic;
     font-size: 4rem;
     -webkit-text-stroke: 0vw #383d52;
   }
-.all{
-  width: 100%;
-  height: 100%;
-}
