@@ -86,6 +86,8 @@ export class AppComponent  implements OnInit {
     this.responsive.observe([
       Breakpoints.HandsetLandscape,
       Breakpoints.TabletLandscape,
+      Breakpoints.TabletPortrait,
+      Breakpoints.HandsetPortrait,
       ])
       .subscribe(result => {
 

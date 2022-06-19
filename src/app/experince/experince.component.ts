@@ -41,7 +41,7 @@ export class ExperinceComponent implements OnInit {
   showXAxis: boolean = false;
   showYAxis: boolean = true;
   gradient: boolean = false;
-  showLegend: boolean = true;
+  showLegend: boolean = false;
   showXAxisLabel: boolean = false;
   yAxisLabel: string = '';
   showYAxisLabel: boolean = false;

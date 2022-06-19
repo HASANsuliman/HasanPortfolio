@@ -88,7 +88,6 @@ button:hover i::after {
 
 .ld-1{
   display: flex;
-  width: 50%;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
@@ -99,9 +98,7 @@ button:hover i::after {
   color: #9fcbdb;
 }
 .ld-1 h1 {
-font-size: 3rem;
 font-style: italic;
-
 }
 
 .exp-1{
@@ -112,6 +109,7 @@ font-style: italic;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 25%;
+  width: 100%;
 }
 .e2 h1{
   margin-right: 15px;
@@ -133,6 +131,5 @@ font-style: italic;
  }
   .e2 h1 {
     color: #142b44;
-    font-size: 4rem;
     -webkit-text-stroke: 0vw #383d52;
   }

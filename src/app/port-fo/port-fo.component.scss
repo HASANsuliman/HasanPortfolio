@@ -6,7 +6,6 @@
 p {
   margin: 0 0 18px;
   padding-left: 15px;
-  line-height: 1.3rem;
 }
 button {
   margin: 5px;
@@ -97,18 +96,18 @@ button:hover i::after {
 }
 .cardpo{
   position: relative;
-  width: 250px;
+  max-width: 264px;
+  width: 200px;
   height: 320px;
   overflow: hidden;
   box-shadow: 0 15px 20px teal;
   transition: 1s;
-  z-index: 0 ;
+  z-index: 0;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-content: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   margin: 5px 15px;
 }
 .cardpo:hover{
@@ -153,10 +152,10 @@ z-index: 10;
   align-content: flex-start;
   justify-content: center;
   align-items: flex-start;
-position: absolute;
-bottom: 10px;
-padding: 10px;
-text-align: center;
+  position: absolute;
+    padding: 2px 1px;
+  text-align: center;
+  bottom: 0;
 }
 .crdcont p{
   padding: 0;
@@ -188,6 +187,31 @@ margin: 3px;
   align-items: center;
   margin: 10px 0px;
 }
+.test1{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1900px;
+    margin: auto;
+    padding: 2rem;
+}
+.test1 .proj2{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.test1 .proj2 .prof{
+ width: 45%;
+}
+.test1 .proj2 .prof h2{
+  width: 85%;
+ }
 .prob {
   position: relative;
   display: flex;
@@ -210,7 +234,7 @@ margin: 3px;
   align-content: flex-start;
   align-items: flex-start;
   box-shadow: 0 5px 15px teal;
-  margin: 0 15px;
+  margin: 5px 15px;
   //border-right:  1px solid teal;
 }
 h4{
