@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContacComponent implements OnInit {
   intersted=['BackEnd','FrontEnd','DataBase']
   constructor() { }
+  Email :string="hasansuliman50@gmail.com"
 
   ngOnInit(): void {
   }

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
 
   constructor() { }
-
+Email :string="hasansuliman50@gmail.com"
   ngOnInit(): void {
   }
 

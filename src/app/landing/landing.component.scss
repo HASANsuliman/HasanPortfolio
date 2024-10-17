@@ -1,19 +1,14 @@
 
-.all{
-
-
-
-}
 .ld{
   display: flex;
   flex-direction: row;
-  max-width: 1900px;
-  margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: center;
   justify-content: flex-start;
+  background-size: cover;
+  min-height: 96vh;
+  align-items: flex-start;
+  background-image: url("../../assets/img/code1.jpg");
 }
 .land {
   background-size: cover;
